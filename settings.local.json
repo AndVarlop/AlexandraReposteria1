@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmd.exe //c \"del /f js\\\\menu.js js\\\\lightbox.js\")",
+      "Bash(git rm *)"
+    ]
+  }
+}

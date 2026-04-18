@@ -1,112 +1,353 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="assets/logo3d.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <enlace rel="preconectar" href="https://fonts.googleapis.com">
-        <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
-        <enlace href="https: //fonts.googleapis.com/css2? family= Plus+Jakarta+Sans:ital,wght@1,200 & display=swap" rel="stylesheet">
+    <meta name="description" content="Alexandra Repostería - Tortas, cupcakes y postres artesanales en Barranquilla, Colombia.">
+    <title>Alexandra Repostería | Barranquilla</title>
+    <link rel="icon" type="image/png" href="assets/logo3d.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <title>Alexandra Reposteria</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-
 </head>
 <body>
-    <nav>
-        <header class="header" id="inicio">
-            <img src="assets/bx-menu.svg" alt="" class="menu">
-            <nav class="menu-navegacion">
-                <a href="#Home"> <i class="fa-solid fa-house"></i> Home</a>
-                <a href="#Nuestro Servicio"> <i class="fa-solid fa-bell-concierge"></i> Nuestro Servicio</a>
-                <a href="#Galeria"> <i class="fa-solid fa-image"></i> Galeria</a>
-                <a href="#Repostera"><i class="fa-solid fa-user"></i> Repostera</a>
-                <a href="#Contactanos"><i class="fa-solid fa-address-book"></i> Contactanos</a>
-            </nav>
-        </header>
-    </nav>
 
-    <!-- Home -->
-    <section id="Home">
-        <h2>Alexandra Reposteria</h2>
-        <p>Calidad al mejor precio</p>
-        <div class="btn">
-            <a href="#Contactanos" class="primary">Contactanos</a>
-        </div>
-    </section>
+    <!-- NAV -->
+    <header class="navbar" id="navbar">
+        <a href="#inicio" class="brand">
+            <img src="assets/logo3d.png" alt="Alexandra Repostería">
+            <span>Alexandra<small>Repostería</small></span>
+        </a>
+        <nav class="nav-links" id="navLinks">
+            <a href="#inicio"><i class="fa-solid fa-house"></i> Inicio</a>
+            <a href="#servicios"><i class="fa-solid fa-bell-concierge"></i> Servicios</a>
+            <a href="#productos"><i class="fa-solid fa-cake-candles"></i> Productos</a>
+            <a href="#galeria"><i class="fa-solid fa-image"></i> Galería</a>
+            <a href="#repostera"><i class="fa-solid fa-user"></i> Repostera</a>
+            <a href="#contacto"><i class="fa-solid fa-address-book"></i> Contacto</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
 
-    <!-- features -->
-    <section class="features" id="Nuestro Servicio">
-        <h1><i class="fa-solid fa-bell-concierge"></i> Nuestro Servicio</h1>
-        <p>Somos la mejor reposteria de la ciudad de Barranquilla, con una excelente repostera y buenos precios para su beneficio</p>
-        <div class="feature-container" id="features">
-            <div class="feature-box">
-                <img src="assets/precio.png" alt="Precios2">
-                <h3>Ofrecemos los mejores precios de toda la ciudad </h3>
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="eyebrow"><i class="fa-solid fa-location-dot"></i> Barranquilla, Colombia</p>
+            <h1>Alexandra <span>Repostería</span></h1>
+            <p class="tagline">Dulces momentos hechos a mano. Calidad artesanal al mejor precio.</p>
+            <div class="hero-cta">
+                <a href="#contacto" class="btn btn-primary"><i class="fa-solid fa-comments"></i> Pide tu torta</a>
+                <a href="#productos" class="btn btn-ghost">Ver productos</a>
             </div>
-            <div class="feature-box">
-                <img src="assets/calidad.png" alt="Calidad">
-                <h3>Contamos con una alta calidad en todos nuestros productos</h3>
+            <div class="hero-stats">
+                <div><strong>10+</strong><span>Años de experiencia</span></div>
+                <div><strong>500+</strong><span>Clientes felices</span></div>
+                <div><strong>24/7</strong><span>Atención</span></div>
+            </div>
+        </div>
+        <a href="#servicios" class="scroll-down"><i class="fa-solid fa-chevron-down"></i></a>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section services">
+        <div class="section-head">
+            <span class="kicker">Lo que ofrecemos</span>
+            <h2>Nuestro Servicio</h2>
+            <p>Somos la mejor repostería de Barranquilla. Recetas artesanales, ingredientes frescos y precios justos.</p>
+        </div>
+        <div class="service-grid">
+            <article class="service-card reveal">
+                <div class="icon-wrap"><i class="fa-solid fa-tag"></i></div>
+                <h3>Mejores precios</h3>
+                <p>Ofrecemos los precios más competitivos de la ciudad sin sacrificar calidad.</p>
+            </article>
+            <article class="service-card reveal">
+                <div class="icon-wrap"><i class="fa-solid fa-award"></i></div>
+                <h3>Alta calidad</h3>
+                <p>Ingredientes premium y recetas perfeccionadas durante años de experiencia.</p>
+            </article>
+            <article class="service-card reveal">
+                <div class="icon-wrap"><i class="fa-solid fa-truck-fast"></i></div>
+                <h3>Entrega rápida</h3>
+                <p>Llevamos tu pedido a toda Barranquilla, puntual y en perfecto estado.</p>
+            </article>
+            <article class="service-card reveal">
+                <div class="icon-wrap"><i class="fa-solid fa-heart"></i></div>
+                <h3>Hecho con amor</h3>
+                <p>Cada postre es preparado a mano, con dedicación y pasión por lo dulce.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="section products">
+        <div class="section-head">
+            <span class="kicker">Nuestro menú</span>
+            <h2>Productos Destacados</h2>
+            <p>Descubre nuestras creaciones favoritas. Hacemos pedidos personalizados.</p>
+        </div>
+        <div class="filters" id="filters">
+            <button class="filter active" data-filter="all">Todos</button>
+            <button class="filter" data-filter="tortas">Tortas</button>
+            <button class="filter" data-filter="cupcakes">Cupcakes</button>
+            <button class="filter" data-filter="especiales">Especiales</button>
+        </div>
+        <div class="product-grid" id="productGrid">
+            <article class="product-card" data-category="tortas">
+                <div class="product-img"><img src="assets/image1.jpeg" alt="Torta de cumpleaños"></div>
+                <div class="product-body">
+                    <span class="tag">Tortas</span>
+                    <h3>Torta de Cumpleaños</h3>
+                    <p>Bizcocho esponjoso, relleno cremoso y decoración personalizada.</p>
+                    <div class="product-foot">
+                        <span class="price">desde $80.000</span>
+                        <a href="#contacto" class="btn-mini">Pedir</a>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card" data-category="cupcakes">
+                <div class="product-img"><img src="assets/cupcake-268237_1920.jpg" alt="Cupcakes"></div>
+                <div class="product-body">
+                    <span class="tag">Cupcakes</span>
+                    <h3>Cupcakes Artesanales</h3>
+                    <p>Mini delicias con coberturas variadas, perfectos para compartir.</p>
+                    <div class="product-foot">
+                        <span class="price">desde $4.000 c/u</span>
+                        <a href="#contacto" class="btn-mini">Pedir</a>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card" data-category="especiales">
+                <div class="product-img"><img src="assets/cake-pops-693645_1920.jpg" alt="Cake pops"></div>
+                <div class="product-body">
+                    <span class="tag">Especiales</span>
+                    <h3>Cake Pops</h3>
+                    <p>Pequeñas esferas de bizcocho bañadas en chocolate. Ideales para eventos.</p>
+                    <div class="product-foot">
+                        <span class="price">desde $3.500 c/u</span>
+                        <a href="#contacto" class="btn-mini">Pedir</a>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card" data-category="tortas">
+                <div class="product-img"><img src="assets/image2.jpeg" alt="Torta temática"></div>
+                <div class="product-body">
+                    <span class="tag">Tortas</span>
+                    <h3>Torta Temática</h3>
+                    <p>Diseño a medida para cada ocasión: bautizos, quinceañeros, bodas.</p>
+                    <div class="product-foot">
+                        <span class="price">desde $120.000</span>
+                        <a href="#contacto" class="btn-mini">Pedir</a>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card" data-category="especiales">
+                <div class="product-img"><img src="assets/happy-birthday-380178_1920.jpg" alt="Postres especiales"></div>
+                <div class="product-body">
+                    <span class="tag">Especiales</span>
+                    <h3>Mesa de Postres</h3>
+                    <p>Paquete completo con variedad de postres para tu evento.</p>
+                    <div class="product-foot">
+                        <span class="price">desde $250.000</span>
+                        <a href="#contacto" class="btn-mini">Pedir</a>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card" data-category="cupcakes">
+                <div class="product-img"><img src="assets/image3.jpeg" alt="Cupcakes decorados"></div>
+                <div class="product-body">
+                    <span class="tag">Cupcakes</span>
+                    <h3>Cupcakes Decorados</h3>
+                    <p>Presentación única con decoración temática personalizada.</p>
+                    <div class="product-foot">
+                        <span class="price">desde $5.500 c/u</span>
+                        <a href="#contacto" class="btn-mini">Pedir</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria" class="section gallery">
+        <div class="section-head">
+            <span class="kicker">Momentos dulces</span>
+            <h2>Galería</h2>
+            <p>Un vistazo a nuestras creaciones más recientes.</p>
+        </div>
+        <div class="gallery-grid">
+            <img src="assets/image1.jpeg" alt="Galería" class="img-gallery">
+            <img src="assets/image2.jpeg" alt="Galería" class="img-gallery">
+            <img src="assets/image3.jpeg" alt="Galería" class="img-gallery">
+            <img src="assets/image4.jpeg" alt="Galería" class="img-gallery">
+            <img src="assets/image5.jpeg" alt="Galería" class="img-gallery">
+            <img src="assets/image6.jpeg" alt="Galería" class="img-gallery">
+            <img src="assets/cake-pops-693645_1920.jpg" alt="Galería" class="img-gallery">
+            <img src="assets/cupcake-268237_1920.jpg" alt="Galería" class="img-gallery">
+        </div>
+        <div class="insta-cta">
+            <i class="fa-brands fa-instagram"></i>
+            <div>
+                <h3>Síguenos en Instagram</h3>
+                <p>Más fotos, historias y novedades de la repostería.</p>
+            </div>
+            <a href="https://www.instagram.com/alexandrareposteria/" target="_blank" rel="noopener" class="btn btn-primary">@alexandrareposteria</a>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
+        <button class="lightbox-nav prev" id="lightboxPrev"><i class="fa-solid fa-chevron-left"></i></button>
+        <img src="" alt="" id="lightboxImg">
+        <button class="lightbox-nav next" id="lightboxNext"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <!-- REPOSTERA -->
+    <section id="repostera" class="section repostera">
+        <div class="repostera-wrap">
+            <div class="repostera-img">
+                <img src="assets/repostera.jpeg" alt="Alexandra López">
+                <div class="exp-badge">
+                    <strong>10+</strong>
+                    <span>años de experiencia</span>
+                </div>
+            </div>
+            <div class="repostera-info">
+                <span class="kicker">Conócenos</span>
+                <h2>Alexandra López</h2>
+                <p class="role">Repostera & Fundadora</p>
+                <p>Más de una década creando dulces que cuentan historias. Cada torta, cada cupcake y cada postre es el resultado de la pasión por la repostería y el compromiso con la calidad que define a nuestra marca.</p>
+                <ul class="bullets">
+                    <li><i class="fa-solid fa-check"></i> Recetas artesanales propias</li>
+                    <li><i class="fa-solid fa-check"></i> Ingredientes seleccionados</li>
+                    <li><i class="fa-solid fa-check"></i> Diseños personalizados</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Galery -->
-    <section class="gallery" id="Galeria">
-        <h1><i class="fa-solid fa-image"></i> Galeria</h1>
-        <div class="contenedor-galeria">
-            <img src="assets/image1.jpeg" alt="" class="img-gallery">
-            <img src="assets/image2.jpeg" alt="" class="img-gallery">
-            <img src="assets/image5.jpeg" alt="" class="img-gallery">
-            <img src="assets/image4.jpeg" alt="" class="img-gallery">
-            <img src="assets/image5.jpeg" alt="" class="img-gallery">
-            <img src="assets/image4.jpeg" alt="" class="img-gallery">
+    <!-- TESTIMONIOS -->
+    <section class="section testimonials">
+        <div class="section-head">
+            <span class="kicker">Lo que dicen</span>
+            <h2>Clientes felices</h2>
         </div>
-        <div class="insta">
-            <h2>Visita nuestro instagram para mas imagenes</h2>
-            <a href="https://www.instagram.com/alexandrareposteria/" target="_blank" class = "social-media-icon"> 
-                <i class="fa-brands fa-instagram-square"> instagram </i>
-            </a>
+        <div class="testi-grid">
+            <figure class="testi">
+                <i class="fa-solid fa-quote-left"></i>
+                <blockquote>La mejor torta de cumpleaños que hemos probado. Suave, fresca y preciosa.</blockquote>
+                <figcaption>— María G.</figcaption>
+            </figure>
+            <figure class="testi">
+                <i class="fa-solid fa-quote-left"></i>
+                <blockquote>Puntualidad y calidad impecables. Pedí cupcakes para mi oficina y todos quedaron encantados.</blockquote>
+                <figcaption>— Juan P.</figcaption>
+            </figure>
+            <figure class="testi">
+                <i class="fa-solid fa-quote-left"></i>
+                <blockquote>Alexandra hizo la torta de mi boda. Una obra de arte, y un sabor inolvidable.</blockquote>
+                <figcaption>— Laura R.</figcaption>
+            </figure>
         </div>
     </section>
-    <section class="imagen-light">
-        <img src="assets/square-xmark-solid.svg" alt="" class="close">
-        <img src="" alt="" class="agregar-imagen">
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section contact">
+        <div class="section-head">
+            <span class="kicker">Hablemos</span>
+            <h2>Contáctanos</h2>
+            <p>Atención 24 horas. Escríbenos y te respondemos lo antes posible.</p>
+        </div>
+        <div class="contact-wrap">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div><strong>Ubicación</strong><span>Barranquilla, Colombia</span></div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <div><strong>Horario</strong><span>Todos los días · 24/7</span></div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div><strong>WhatsApp</strong><span>Pedidos y cotizaciones</span></div>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/alexandrareposteria2018/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/alexandrareposteria/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/message/RVHS4SL7DEUOK1?autoload=1&app_absent=0" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm" novalidate>
+                <div class="row">
+                    <label>
+                        <span>Nombre</span>
+                        <input type="text" name="name" required placeholder="Tu nombre">
+                    </label>
+                    <label>
+                        <span>Teléfono</span>
+                        <input type="tel" name="phone" required placeholder="300 000 0000">
+                    </label>
+                </div>
+                <label>
+                    <span>Tipo de pedido</span>
+                    <select name="type" required>
+                        <option value="">Selecciona...</option>
+                        <option>Torta</option>
+                        <option>Cupcakes</option>
+                        <option>Cake pops</option>
+                        <option>Mesa de postres</option>
+                        <option>Otro</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Mensaje</span>
+                    <textarea name="message" rows="4" required placeholder="Cuéntanos qué necesitas: fecha, cantidad, tema..."></textarea>
+                </label>
+                <button type="submit" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Enviar por WhatsApp</button>
+                <p class="form-status" id="formStatus"></p>
+            </form>
+        </div>
     </section>
 
-<!-- Repostera -->
-<section class="repostera" id="Repostera">
-    <h1><i class="fa-solid fa-user"></i> Repostera</h1>
-    <div class="alexandra">
-        <img src="assets/repostera.jpeg" alt="" class="img-repostera">
-        <h2 >Alexandra lopez</h2>
-        <p>Repostera con 10 años de experiencia en el campo
-            de la reposteria, propietaria de la empresa </p>
-    </div>
-</section>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="foot-brand">
+                <img src="assets/logo3d.png" alt="Alexandra Repostería">
+                <p>Dulces momentos hechos a mano en Barranquilla, Colombia.</p>
+            </div>
+            <div>
+                <h4>Navegación</h4>
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#productos">Productos</a>
+                <a href="#galeria">Galería</a>
+            </div>
+            <div>
+                <h4>Síguenos</h4>
+                <a href="https://www.instagram.com/alexandrareposteria/" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://www.facebook.com/alexandrareposteria2018/" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://api.whatsapp.com/message/RVHS4SL7DEUOK1?autoload=1&app_absent=0" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Alexandra Repostería · Barranquilla, Colombia</p>
+        </div>
+    </footer>
 
+    <!-- WhatsApp flotante -->
+    <a href="https://api.whatsapp.com/message/RVHS4SL7DEUOK1?autoload=1&app_absent=0" target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
-    <!-- contactanos -->
-<section class="contact" id="Contactanos">
-    <div class="reminder">
-        <h1><i class="fa-solid fa-address-book"></i> Contactanos</h1>
-        <p>Tenemos servicio las 24 horas</p>
-    </div>
-    <div class="form">
-        <h2>Nuestras Redes</h2>
-        <div class="social-media">
-            <a href="https://www.facebook.com/alexandrareposteria2018/" target="_blank" class="fa-brands fa-facebook" ></a>
-            <a href="https://www.instagram.com/alexandrareposteria/" target="_blank" class="fa-brands fa-instagram-square" ></a>
-            <a href="https://api.whatsapp.com/message/RVHS4SL7DEUOK1?autoload=1&app_absent=0" target="_blank" class="fa-brands fa-whatsapp" ></a>
-          </div>
-        
-    </div>
-</section>
-
-    <script src="js/menu.js"></script>
-    <script src="js/lightbox.js"></script>
-
+    <script src="js/app.js"></script>
 </body>
 </html>
